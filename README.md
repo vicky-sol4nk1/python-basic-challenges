@@ -1,17 +1,5 @@
 # python-basic-challenges
 
-Haan El, bilkul sahi idea! 😄 Basics clear karne ke liye 100 challenges dena bohot accha plan hai. Main inhe **topic-wise divide** kar raha hoon (jaise tumhare original topics: Variables/Data Types/Operators, Loops/Control Flow, Functions/Modules, Lists, Dicts, Sets). Har topic ke 15–20 challenges honge, total ~100+ (thoda extra de raha hoon variety ke liye).
-
-**Kaise solve karein?**  
-- Har challenge ko **simple Python code** mein solve karo (no extra libraries, sirf built-in use karo).  
-- Ek baar mein 5–10 solve kar ke code bhej dena (jaise previous mein tune if-else wala bheja tha).  
-- Main check karunga: Sahi hai ya nahi, errors bataunga, better way suggest karunga. Aur agar code run karne ki zaroorat padi toh internally test kar lunga.  
-- Start small: Pehle Variables se shuru kar, phir aage badh.  
-
-Yeh challenges **easy to medium** level ke hain, inspired from PYnative, HackerRank, w3resource, etc. Har ek ke baad expected output hint diya hai (lekin poora solution nahi, khud try karo pehle!).
-
-### 1. Variables, Data Types, Operators (20 Challenges)
-Yeh basic building blocks hain. Focus: Assignment, types (int, float, str, bool), arithmetic (+-*/%), comparison (== > <), logical (and or not).
 
 1. Ek variable `x` banao aur usme 10 store karo. Phir usko print karo. (Output: 10)  
 2. Do variables `a=5`, `b=3` banao. Unka sum print karo. (Output: 8)  
@@ -149,4 +137,3 @@ Focus: Unique, add, union, intersection, difference.
 114. Count unique in list: len(set([1,2,1]))=2  
 115. Check membership: 1 in {1,2} → True  
 
-Ab start kar: Pehle 1-10 try kar ke codes bhej dena (ek message mein 5-5). Main check karunga aur feedback dunga. Ya koi specific topic se shuru karna chahe? All the best, concepts super clear ho jaayenge isse! 💪🐍

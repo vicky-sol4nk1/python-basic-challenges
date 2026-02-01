@@ -34,14 +34,29 @@ except Exception as error:
     print(f"error{error}")
   ```
 4. Read and print the entire content of `info.txt`.
+      try:
+    with open("info.txt","r") as info:
+        print(info.read())
+except Exception as error:
+    print(f"error{error}")
+   
+6. Read `log.txt` line by line and print each line with line numbers (1. ..., 2. ...).
+         ```bash
+   try:
+    with open("log.txt","r") as  log:
+        num=1
+        for line in log:
+            
+            print(f"{num}:{line}")
+            num+=1
+except Exception as error:
+    print(f"error:{error}")
+   ```
+8. Count and print how many lines are in any text file (e.g., copy-paste a paragraph into `story.txt`).
 
-5. Read `log.txt` line by line and print each line with line numbers (1. ..., 2. ...).
+9. Read a file and print only lines that contain the word "python" (case insensitive).
 
-6. Count and print how many lines are in any text file (e.g., copy-paste a paragraph into `story.txt`).
-
-7. Read a file and print only lines that contain the word "python" (case insensitive).
-
-8. Create a file `numbers.txt` and write numbers 1 to 50, each on its own line.
+10. Create a file `numbers.txt` and write numbers 1 to 50, each on its own line.
 
 ### Level 2 – Reading & Simple Processing (9–15)
 

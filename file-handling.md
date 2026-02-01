@@ -17,18 +17,37 @@ except Exception as e:
     
 ````
 2. Write your full name into `info.txt` as a single line.
+  ```bash
+try:
+    with open("info.txt","w") as info:
+        full_name=input("enter full name:")
+        info.write(full_name)
+except Exception as error:
+    print(f"errr{error}")
 
-3. Append the current date/time (use `datetime.now()`) to `log.txt` (append mode).
+```
+3. 
 
-4. Read and print the entire content of `info.txt`.
+4. Append the current date/time (use `datetime.now()`) to `log.txt` (append mode).
+from datetime import datetime,date
+```bash
+try:
+    with open("log.txt","a") as log:
+        log.write("\n")
+        log.write(str(datetime.now()))
+except Exception as error:
+    print(f"error{error}")
+```
 
-5. Read `log.txt` line by line and print each line with line numbers (1. ..., 2. ...).
+6. Read and print the entire content of `info.txt`.
 
-6. Count and print how many lines are in any text file (e.g., copy-paste a paragraph into `story.txt`).
+7. Read `log.txt` line by line and print each line with line numbers (1. ..., 2. ...).
 
-7. Read a file and print only lines that contain the word "python" (case insensitive).
+8. Count and print how many lines are in any text file (e.g., copy-paste a paragraph into `story.txt`).
 
-8. Create a file `numbers.txt` and write numbers 1 to 50, each on its own line.
+9. Read a file and print only lines that contain the word "python" (case insensitive).
+
+10. Create a file `numbers.txt` and write numbers 1 to 50, each on its own line.
 
 ### Level 2 – Reading & Simple Processing (9–15)
 

@@ -8,10 +8,12 @@ Do them **in order** — each builds on previous concepts. Use `with open(...)` 
 
 solue:
 ```bash
-print("creating a empty file")
+try:
+    with open("null.txt","w") as f:
+        pass
 
-with open("empty.txt","w"):
-    print("file created successfully!")
+except Exception as e:
+    print(f"error:{e}")
     
 ````
 2. Write your full name into `info.txt` as a single line.

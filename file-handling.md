@@ -40,9 +40,9 @@ except Exception as error:
 except Exception as error:
     print(f"error{error}")
    
-6. Read `log.txt` line by line and print each line with line numbers (1. ..., 2. ...).
-         ```bash
-   try:
+5.Read log.txt line by line and print each line with line numbers (1. ..., 2. ...).
+```bash
+try:
     with open("log.txt","r") as  log:
         num=1
         for line in log:
@@ -51,13 +51,51 @@ except Exception as error:
             num+=1
 except Exception as error:
     print(f"error:{error}")
-   ```
+```
+6.Count and print how many lines are in any text file (e.g., copy-paste a paragraph into story.txt).
+
+```bash
+try:
+    with open("new_story.txt","a",encoding="utf-8") as new_story:
+        try:
+            with open("story.txt","r",encoding="utf-8") as story:
+                count=0
+                for line in story:
+                    new_story.write(line)
+                    count+=1
+                print("successfully copy file")
+                print(f"num of line:{count}")
+        except Exception as error:
+            print(f"error:{error}")
+
+except Exception as error:
+    print(f"error:{error}")
+
+```
+7.Read a file and print only lines that contain the word "python" (case insensitive).
+     ```bash
+     try:
+    with open("demo.txt","r") as demo:
+        count=0
+        for line in demo:
+            if "python" in line.lower():
+                print(line)
+except Exception as error:
+    print(f"detail error:{error}")
+     ```
 8. Count and print how many lines are in any text file (e.g., copy-paste a paragraph into `story.txt`).
 
 9. Read a file and print only lines that contain the word "python" (case insensitive).
 
 10. Create a file `numbers.txt` and write numbers 1 to 50, each on its own line.
-
+```bash
+try:
+    with open("num.txt","w") as num:
+        for i in range(51):
+            num.write(str(i)+"\n")
+except Exception as error:
+    print(f"error {error}")
+```
 ### Level 2 – Reading & Simple Processing (9–15)
 
 9. Read `numbers.txt` (from #8) and calculate the sum of all numbers.

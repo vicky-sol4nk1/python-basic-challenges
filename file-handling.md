@@ -99,7 +99,19 @@ except Exception as error:
 ### Level 2 – Reading & Simple Processing (9–15)
 
 9. Read `numbers.txt` (from #8) and calculate the sum of all numbers.
+```bash
+try:
+    with open("num.txt","r") as num:
+        sum=0
+        for i in num:
+            num1=int(i.strip())
+            sum+=num1
+        print(sum)
 
+            
+except Exception as error:
+    print(f"error {error}")
+```
 10. Read a text file and count total words (split on spaces).
 
 11. Read a file and return a dictionary: {"lines": count, "words": count, "chars": count} (without spaces or with spaces — your choice).

@@ -6,6 +6,14 @@ Do them **in order** — each builds on previous concepts. Use `with open(...)` 
 
 1. Create an empty file called `test.txt` (use `'w'` mode).
 
+solue:
+```bash
+print("creating a empty file")
+
+with open("empty.txt","w"):
+    print("file created successfully!")
+    
+````
 2. Write your full name into `info.txt` as a single line.
 
 3. Append the current date/time (use `datetime.now()`) to `log.txt` (append mode).
